@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <title>Make a Cyber Pet</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+ 
+    
+    <div id="page1" class="page">
+        <h1 id="title"<span>Make</span>&nbsp;<span>a</span>&nbsp;<span>Cyberpet!</span></h1>
+        
+        <p class="instructions">Choose your pet first, then give it a name!</p>
+
+        <div class="pet-selection">
+            <img src="./images/dog.house.png" id="dog" alt="Dog">
+            <audio id="dog-sound" src="./audio/mixkit-annoyed-big-dog-barking-51.wav"></audio>
+    
+            <img src="./images/cat.house.png" id="cat" alt="Cat">
+            <audio id="cat-sound" src="./audio/mixkit-cartoon-kitty-begging-meow-92 (1).wav"></audio>
+    
+            <img src="./images/birdcage.png" id="parrot" alt="Parrot">
+            <audio id="parrot-sound" src="./audio/mixkit-birds-chirping-in-the-jungle-2433.wav"></audio>
+    
+            <img src="./images/horse.stables.png " id="horse" alt="Horse">
+            <audio id="horse-sound" src="./audio/mixkit-scared-horse-neighing-85.wav"></audio>
+        </div>
+        <input type="text" id="pet-name" placeholder="Enter pet's name">
+        <button id="make-pet">Make Pet</button>
+    </div>
+
+ 
+    
+    <div id="page2" class="page" style="display: none;">
+        <h2 id="pet-name-display"></h2>
+        <img src="./image/dog.jpeg" id="pet-image" alt="selected pet">
+        <div class="stats">
+            
+            <div>
+                <label>Health: </label>
+                <input type="range" id="health" min="0" max="100" value="100">
+            </div>
+            <div>
+                <label>Happy: </label>
+                <input type="range" id="happy" min="0" max="100" value="100">
+            </div>
+            <div>
+                <label>Thirsty: </label>
+                <input type="range" id="thirsty" min="0" max="100" value="50">
+            </div>
+            <div>
+                <label>Hunger: </label>
+                <input type="range" id="hunger" min="0" max="100" value="50">
+            </div>
+        </div>
+        <div class="actions">
+            <button id="eat">Eat</button>
+            <button id="drink">Drink</button>
+            <button id="walk">Walk</button>
+            <button id="play">Play</button>
+        </div>
+        <div id="game-over">
+            <h1>Game Over</h1>
+            <p>Sorry, your pet's stats have all reached zero!</p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <p>How To Play</p>
+    <p>Press The Correct Buttons To Keep Your CyberPet Active</p>
+    <p>1. Eat = Hunger</p>
+    <p>2. Drink = Thirsty</p>
+    <p>3. Walk = Health</p>
+    <p>4. Play = Happy</p>
+    <p>You must press these buttons to keep your pet from becoming inactive.</p>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
